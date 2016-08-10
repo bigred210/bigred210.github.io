@@ -1,0 +1,29 @@
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0;  
+        /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.rooms {
+    display: none;
+    opacity: .90;
+    position: fixed; 
+    top: 0; 
+    left: 0;  
+        /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#home {
+    display: none;
+    position: fixed; 
+    top: 0; 
+    left: 0;  
+        /* Preserve aspet ratio */
+    min-width: 100%;
+     min-height: 100%;
+}   
