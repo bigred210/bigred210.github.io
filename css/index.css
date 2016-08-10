@@ -5,7 +5,11 @@ body {
     font-size: 15px;
 }
 
-div > .project .projects{
+div > .container {
+    margin-top: 15px;
+}
+
+div > .project .projects {
     background: transparent;
     margin: none;
 }
