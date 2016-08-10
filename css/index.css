@@ -1,9 +1,11 @@
 body {
     background-color: black;
 }
+
 .navbar {
     height: 40px;
 }
+
 .navbar-brand {
     font-size: 15px;
 }
@@ -12,8 +14,11 @@ body {
     margin-top: 25px;
 }
 
-div > .project .projects {
+.projects {
     text-align: center;
-    background: transparent;
+    background: black;
     margin: none;
 }
+
+div > .col-xs-4
+
