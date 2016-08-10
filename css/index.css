@@ -2,7 +2,7 @@ body {
     background-color: black;
 }
 
-.project {
+div > .project .projects{
     background: transparent;
     margin: none;
 }
