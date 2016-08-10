@@ -1,6 +1,9 @@
 body {
     background-color: black;
 }
+.navbar-brand {
+    font-size: 15px;
+}
 
 div > .project .projects{
     background: transparent;
