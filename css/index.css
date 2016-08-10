@@ -13,6 +13,7 @@ body {
 }
 
 div > .project .projects {
+    text-align: center;
     background: transparent;
     margin: none;
 }
