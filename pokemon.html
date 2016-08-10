@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pokemon Go</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/pokemon.css">
+
+</head>
+<body>
+
+    <section id="home">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <img class="logo" src="img/pokemonLogo.jpg">
+                </div>
+            </div> <!-- end of row -->
+
+            <div class="jumbotron">
+                        <!-- begin flip boxes -->
+                <div class="row">
+                    <div class="col-xs-4">
+                        <div class="flip3D">
+                            <div class="back">
+                               <a href="#valor"><img src="img/teamValor2.png"></a>
+                            </div>
+                            <div class="front">
+                                <img src="img/teamValor.png">
+                            </div>
+                        </div> <!-- end flip3d box 1 -->
+                    </div> <!-- end col -->
+                    <div class="col-xs-4">
+                        <div class="flip3D">
+                            <div class="back">
+                                <a href="#instinct"><img src="img/teamInstinct2.png"></a>
+                            </div>
+                            <div class="front">
+                                <img src="img/teamInstinct.png">
+                            </div>
+                        </div> <!-- end flip3d box 2 -->
+                    </div> <!-- end col -->
+                    <div class="col-xs-4">
+                        <div class="flip3D">
+                            <div class="back">
+                                <a href="#mystic"><img src="img/teamMystic2.png"></a>
+                            </div>
+                            <div class="front">
+                                <img src="img/teamMystic.png">
+                            </div>
+                        </div> <!-- end flip3d box 3 -->
+                    </div> <!-- end col -->
+                </div> <!-- end row -->
+             </div> <!-- end of jumbotron -->
+
+            <div class="row">
+                <div class="col-xs-12">
+                    <a href="#map" target="iframe_map"><img class="catch" src="img/catch.png"></a>
+                </div>
+            </div> <!-- end row -->
+            <div class="row links">
+                <div class="col-xs-12">
+                    <ul>
+                        <tr>
+                            <th><a href="#catch">Pokemon</a></th>
+                            <th><a href="#attacks">Attack</a></th>
+                            <th><a href="#defend">Defense</a></th>
+                            <th><a href="#staminas">Stamina</a></th>
+                            <th><a href="#combineds">Combined</a></th>
+                            <th><a href="#hints">Hints/Tips</a></th>
+                        </tr>
+                    </ul>
+                </div>
+            </div> <!-- end row -->
+
+            <div class="load">
+                <img class="storm5" src="img/storm5.png">
+                <img class="pikachu" src="img/pikachu.png">
+            </div>
+
+        </div> <!-- end of container -->
+    </section> <!-- end of section #home -->
+
+    <section id="valor">
+        <div class="teams">
+
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3">
+                    <h3>Team Valor</h3>
+                    <p> 
+                        Candela is the head of the red team, and she's got spunk for days. Her M.O. is very much in line with what Pokémon trainers have been taught from the get-go: To be the very best Pokémon master, you've got to train for it. Bonding with your Pokémon helps to tap into their strengths, according to Team Valor. If that sounds good to you, go Valor. Also, if you like the fire bird legendary Moltres, that's another reason to go with Valor; Moltres is its mascot. <br>
+                        <a href="#home">Top</a>
+                    </p>
+                </div> <!-- end col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div  class="info col-xs-6 col-xs-offset-3">
+                    <img src="img/valor.png">
+                </div> <!-- end col -->
+            </div> <!-- end of row --> 
+
+        </div> <!-- end of container -->
+    </section> <!-- end of section #valor -->
+
+    <section id="instinct">
+         <div class="teams">
+
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3">
+                    <h3>Team Instinct</h3>
+                    <p> 
+                        Spark is the leader of Team Instinct, the yellow team. Spark is all about trusting your instincts — hence the name of the team. (Spark is not one for nuance.) If you feel that Pokémon are innately talented, and that success in battle can be chalked up to trusting your gut, Instinct is probably the way to go. Team Instinct's mascot is the legendary bird Zapdos. <br>
+                        <a href="#home">Top</a>
+                    </p>
+                </div> <!-- end col -->
+            </div> <!-- end of row --> 
+            <div class="row">
+                <div  class="info col-xs-6 col-xs-offset-3">
+                    <img class="info" src="img/instinct.png">
+                </div> <!-- end col -->
+            </div> <!-- end of row --> 
+
+        </div> <!-- end of container -->
+    </section> <!-- end of section #instinct -->
+
+    <section id="mystic">
+        <div class="teams">
+
+            <div class="row">
+                <div class="col-xs-6 col-xs-offset-3">
+                    <h3>Team Mystic</h3>
+                    <p> 
+                        Blanche is in charge of Team Mystic, the brainiest of the bunch. The blue team is most interested in evolution; beyond that, the members of this faction are cool to a point of intimidation. If you're interested in the science behind what makes Pokémon tick — and are convinced that keeping calm is all it takes for success — choose Team Mystic. Mystic is represented by Articuno, the icy legendary. <br>
+                        <a href="#home">Top</a>
+                    </p>
+                </div> <!-- end col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="info col-xs-6 col-xs-offset-3">
+                    <img class="info" src="img/mystic.png">
+                </div> <!-- end col -->
+            </div> <!-- end of row --> 
+
+        </div> <!-- end of container -->
+    </section> <!-- end of section #mystic -->
+
+    <section id="map">
+        <div class="container-fluid map">
+            <iframe src="https://pokemapper.co/" name="iframe_map"></iframe>
+            <a href="#home">Main Page</a>
+        </div> <!-- end of container #map -->
+    </section> <!-- end of section #map -->
+
+ 
+    <section id="statistics">
+        <div class="container-fluid">
+
+            <div id="catch" class="carousel-title">
+                <h3>Can you catch all 151 Pokemon?</h3>
+            </div>
+            <div id="stats" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#stats" data-slide-to="0" class="active"></li>
+                    <li data-target="#stats" data-slide-to="1"></li>
+                    <li data-target="#stats" data-slide-to="2"></li>
+                    <li data-target="#stats" data-slide-to="3"></li>
+                    <li data-target="#stats" data-slide-to="4"></li>
+                    <li data-target="#stats" data-slide-to="5"></li>
+                    <li data-target="#stats" data-slide-to="6"></li>
+                    <li data-target="#stats" data-slide-to="7"></li>
+                    <li data-target="#stats" data-slide-to="8"></li>
+                </ol>
+                    <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../img/pokemonStats/stat1.png" alt="slide0">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stat2.png" alt="slide1">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stat3.png" alt="slide2">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stat4.png" alt="slide3">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stat5.png" alt="slide4">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stat6.png" alt="slide5">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stat7.png" alt="slide6">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stat8.png" alt="slide7">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stat9.png" alt="slide8">
+                    </div>
+                </div> <!-- end of .carousel-inner -->
+            </div> <!-- end #stats .carousel slide -->
+            <div class="carousel-end">
+                <a href="#home">Top</a>
+            </div> <!-- end of carousel -->
+
+            <div id="attacks" class="carousel-title">
+                <h3>Best in Attack.</h3>
+            </div>
+            <div id="attack" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#attack" data-slide-to="0" class="active"></li>
+                    <li data-target="#attack" data-slide-to="1"></li>
+                    <li data-target="#attack" data-slide-to="2"></li>
+                    <li data-target="#attack" data-slide-to="3"></li>
+                    <li data-target="#attack" data-slide-to="4"></li>
+                    <li data-target="#attack" data-slide-to="5"></li>
+                    <li data-target="#attack" data-slide-to="6"></li>
+                    <li data-target="#attack" data-slide-to="7"></li>
+                    <li data-target="#attack" data-slide-to="8"></li>
+                </ol>
+                    <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../img/pokemonStats/attack1.png" alt="slide0">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/attack2.png" alt="slide1">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/attack3.png" alt="slide2">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/attack4.png" alt="slide3">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/attack5.png" alt="slide4">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/attack6.png" alt="slide5">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/attack7.png" alt="slide6">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/attack8.png" alt="slide7">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/attack9.png" alt="slide8">
+                    </div>
+                </div> <!-- end of .carousel-inner -->
+            </div> <!-- end #attack .carousel slide -->
+            <div class="carousel-end">
+                <a href="#home">Top</a>
+            </div> <!-- end of carousel -->
+
+            <div id="defend" class="carousel-title">
+                <h3>Best in Defense.</h3>
+            </div>
+            <div id="defense" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#defense" data-slide-to="0" class="active"></li>
+                    <li data-target="#defense" data-slide-to="1"></li>
+                    <li data-target="#defense" data-slide-to="2"></li>
+                    <li data-target="#defense" data-slide-to="3"></li>
+                    <li data-target="#defense" data-slide-to="4"></li>
+                    <li data-target="#defense" data-slide-to="5"></li>
+                    <li data-target="#defense" data-slide-to="6"></li>
+                    <li data-target="#defense" data-slide-to="7"></li>
+                    <li data-target="#defense" data-slide-to="8"></li>
+                </ol>
+                    <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../img/pokemonStats/defense1.png" alt="slide0">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/defense2.png" alt="slide1">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/defense3.png" alt="slide2">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/defense4.png" alt="slide3">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/defense5.png" alt="slide4">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/defense6.png" alt="slide5">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/defense7.png" alt="slide6">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/defense8.png" alt="slide7">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/defense9.png" alt="slide8">
+                    </div>
+                </div> <!-- end of .carousel-inner -->
+            </div> <!-- end #defense .carousel slide -->
+            <div class="carousel-end">
+                <a href="#home">Top</a>
+            </div> <!-- end of carousel -->
+
+
+            <div id="staminas" class="carousel-title">
+                <h3>Best in Stamina.</h3>
+            </div>
+            <div id="stamina" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#stamina" data-slide-to="0" class="active"></li>
+                    <li data-target="#stamina" data-slide-to="1"></li>
+                    <li data-target="#stamina" data-slide-to="2"></li>
+                    <li data-target="#stamina" data-slide-to="3"></li>
+                    <li data-target="#stamina" data-slide-to="4"></li>
+                    <li data-target="#stamina" data-slide-to="5"></li>
+                    <li data-target="#stamina" data-slide-to="6"></li>
+                    <li data-target="#stamina" data-slide-to="7"></li>
+                    <li data-target="#stamina" data-slide-to="8"></li>
+                </ol>
+                    <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../img/pokemonStats/stamina1.png" alt="slide0">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stamina2.png" alt="slide1">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stamina3.png" alt="slide2">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stamina4.png" alt="slide3">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stamina5.png" alt="slide4">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stamina6.png" alt="slide5">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stamina7.png" alt="slide6">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stamina8.png" alt="slide7">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/stamina9.png" alt="slide8">
+                    </div>
+                </div> <!-- end of .carousel-inner -->
+            </div> <!-- end #stamina .carousel slide -->
+            <div class="carousel-end">
+                <a href="#home">Top</a>
+            </div> <!-- end of carousel -->
+
+
+            <div id="combineds" class="carousel-title">
+                <h3>Best in Combined.</h3>
+            </div>
+            <div id="combined" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#combined" data-slide-to="0" class="active"></li>
+                    <li data-target="#combined" data-slide-to="1"></li>
+                    <li data-target="#combined" data-slide-to="2"></li>
+                    <li data-target="#combined" data-slide-to="3"></li>
+                    <li data-target="#combined" data-slide-to="4"></li>
+                    <li data-target="#combined" data-slide-to="5"></li>
+                    <li data-target="#combined" data-slide-to="6"></li>
+                    <li data-target="#combined" data-slide-to="7"></li>
+                    <li data-target="#combined" data-slide-to="8"></li>
+                </ol>
+                    <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../img/pokemonStats/combined1.png" alt="slide0">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/combined2.png" alt="slide1">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/combined3.png" alt="slide2">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/combined4.png" alt="slide3">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/combined5.png" alt="slide4">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/combined6.png" alt="slide5">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/combined7.png" alt="slide6">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/combined8.png" alt="slide7">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/combined9.png" alt="slide8">
+                    </div>
+                </div> <!-- end of .carousel-inner -->
+            </div> <!-- end #combined .carousel slide -->
+            <div class="carousel-end">
+                <a href="#home">Top</a>
+            </div> <!-- end of carousel -->
+
+
+            <div id="hints" class="carousel-title">
+                <h3>Trainer levels and Xp Tips/Hints</h3>
+            </div>
+            <div id="tips" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#tips" data-slide-to="0" class="active"></li>
+                    <li data-target="#tips" data-slide-to="1"></li>
+                    <li data-target="#tips" data-slide-to="2"></li>
+                    <li data-target="#tips" data-slide-to="3"></li>
+                    <li data-target="#tips" data-slide-to="4"></li>
+                </ol>
+                    <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../img/pokemonStats/level1.png" alt="slide0">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/level2.png" alt="slide1">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/level3.png" alt="slide2">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/level4.png" alt="slide3">
+                    </div>
+                    <div class="item">
+                        <img src="../img/pokemonStats/earn.png" alt="slide4">
+                    </div>
+                </div> <!-- end of .carousel-inner -->
+            </div> <!-- end #tips .carousel slide -->
+            <div class="carousel-end">
+                <a href="#home">Top</a>
+            </div> <!-- end of carousel -->
+
+
+        </div> <!-- end of container #statistics -->
+    </section> <!-- end of section #statistics -->
+ 
+<!-- thanks to google images and thesilphroad.com for images and statistics -->
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="pokemon.js">
+
+</script>
+</body>
+</html>

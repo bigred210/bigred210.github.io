@@ -1,0 +1,278 @@
+        /* -------- begin FLIP box -------- */
+
+    div > .flip3D {
+        margin-left: 50px;
+        border-radius: 10px;
+    }
+
+    .flip3D { 
+        width: 240px; 
+        height: 200px; 
+        margin-top: -10px; 
+        float: left; 
+    }
+
+    .flip3D > .front {
+        opacity: .5;
+        border-radius: 10px;
+        position:absolute;
+        transform: perspective( 600px ) rotateX( 0deg );
+        background: black; width:240px; height:200px; border-radius: 7px;
+        backface-visibility: hidden;
+        transition: transform .5s linear 0s;
+    }
+
+    .flip3D > .back {
+        border-radius: 10px;
+        position:absolute;
+        transform: perspective( 600px ) rotateX( 180deg );
+        background: black; width:240px; height:200px; border-radius: 7px;
+        backface-visibility: hidden;
+        transition: transform .5s linear 0s;
+    }
+
+    .flip3D:hover > .front {
+        transform: perspective( 600px ) rotateX( -180deg );
+    }
+
+    .flip3D:hover > .back {
+        transform: perspective( 600px ) rotateX( 0deg );
+    }
+
+
+    .btn-primary {
+        background-color: transparent;
+        border: none;
+        color: #c28935;
+        font-size: 15px;
+    }
+
+    .links {
+        display: none;
+    }
+    a {
+        color: #faca05;
+    }
+
+    .jumbotron {
+        display: none;
+        background-color: transparent;
+        position: relative;
+        background-size: 100% 100%;
+        height: 250px;
+        width: 100%;
+        position: relative;
+    }
+
+        /* ---  responsiveness --- */
+    @media only screen and (max-width: 500px) {
+        [class*="col-xs-12"] {
+            width: 100%;
+            margin-left: 5px;
+        }
+        img {
+            height: 110px;
+            width: 75px;
+        }
+        .catch {
+            height: 90px;
+            width: 300px;
+            margin-top: 10px;
+            margin-left: 30px;
+        }
+        .logo {
+            height: 170px;
+            width: 300px;
+            margin-left: 25px;
+            margin-top: 10px;
+        }
+        .jumbotron {
+            background-color: transparent;
+            position: relative;
+            background-size: 100% 100%;
+            height: 125px;
+            width: 100%;
+            margin-left: -40px; 
+            position: relative;
+        }
+        .flip3D { 
+            width: 75px; 
+            height: 50px; 
+            float: left; 
+        }
+        .flip3D > .front {
+            position:absolute;
+            transform: perspective( 600px ) rotateX( 0deg );
+            background: black; width:90px; height:60px; border-radius: 7px;
+            backface-visibility: hidden;
+            transition: transform .5s linear 0s;
+        }
+        .flip3D > .back {
+            position:absolute;
+            transform: perspective( 600px ) rotateX( 180deg );
+            background: black; width:90px; height:60px; border-radius: 7px;
+            backface-visibility: hidden;
+            transition: transform .5s linear 0s;
+        }
+    }
+
+        /* ---  carousel --- */
+    #stats {margin-left: 250px;}
+    #defense {margin-left: 250px;}
+    #stamina {margin-left: 250px;}
+    #attack {margin-left: 250px;}
+    #combined {margin-left: 250px;}
+    #tips {margin-left: 250px;}
+
+    .carousel-control {
+      top: 90%;
+    }
+    .carousel-inner {
+      width: 800px;
+      height: 548px;
+    }
+    .carousel-indicators {
+      margin-left: -400px;
+    }
+    .carousel-control.left, .carousel-control.right {
+      background: none;
+      color: @red;
+      border: none;
+    }
+    .carousel-control.left {color: black;}
+    .carousel-control.right {color: black;}
+
+    ul {
+        color: white;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    body {
+        background-color: black;
+    }
+
+    div {
+        text-align: left;
+    }
+
+    .carousel-title {
+        color: white;
+        text-align: center;
+    }
+
+    .carousel-end {
+        margin-bottom: 200px;
+        text-align: center;
+    }
+
+    .info > img {
+        background-repeat: no-repeat;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 10px;
+        border-color: white;
+    }
+
+    .load {
+        display: hidden;
+        margin-top: 20%;
+    }
+
+    .teams > h3 {
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    .teams > p {
+        margin-top: 10px;
+    }
+
+    .container-fluid {
+        height: 700px;
+        width: 100%;
+        text-align: center
+    }
+
+    .home {
+        background-color: black;
+        height: 640px;
+        width: 100%;
+    }
+
+    .map {
+       margin-top: 150px; 
+    }
+
+    #valor {
+        margin-top: 150px;
+        color: white;
+        height: 250;
+        width: 100%;
+    }
+
+    #instinct {
+        margin-top: 150px;
+        color: white;
+        height: 250;
+        width: 100%;
+    }
+
+    #mystic {
+        margin-top: 150px;
+        margin-bottom: 70px;
+        color: white;
+        height: 250;
+        width: 100%;
+    }
+
+    #catch {
+        margin-top: 150px;
+    }
+
+    #defends {
+        margin-top: 150px;
+    }
+
+    #attacks {
+        margin-top: 150px;
+    }
+
+    #combineds {
+        margin-top: 150px;
+    }
+
+    #tips {
+        margin-top: 150px;
+    }
+
+    #staminas {
+        margin-top: 150px;
+    }
+
+    .pikachu {
+        display: none; 
+        padding-left: 510px; 
+    }
+
+    .logo {
+        display: none;
+        margin-left: -20px;
+    }
+
+    .catch {
+        display: none;
+        margin-left: 150px;
+    }
+
+    .storm5 {
+        display: none;
+        margin-left: -70px;
+    }
+
+    iframe {
+        height: 600px;
+        width: 1200px;
+        border: white;
+        margin-left: 20px;
+    }
