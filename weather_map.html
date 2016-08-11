@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Map</title>
+<!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+ <!-- css -->   
+    <link rel="stylesheet" type="text/css" href="css/weather.css">
+</head>
+<body>
+
+    <div class="contatiner">
+
+
+        <!-- hidden div -->
+        <div id="secret_video" style="display: none;" class="jumbtron">
+            <video preload="auto" id="video">
+                <source src="../img/weather/ted.mp4" type="video/mp4" >
+            </video>
+        </div>
+
+
+        <!-- video -->
+        <video autoplay loop muted id="background">
+            <source src="/img/weather/mapbgvid.mp4" type="video/mp4">
+        </video>
+      
+
+        <!-- div to hold map -->
+        <div id="map-canvas" class="col-md-8 col-md-offset-2"></div>
+
+
+        <!-- search box for map -->
+        <input id="pac-input" class="controls col-md-3 col-md-offset-3" type="text" placeholder="What's the weather like in . . . ?">
+
+
+        <!-- div to hold city -->   
+        <div class="row">
+            <div id="city" class="col-md-12"></div>
+        </div> <!-- row end -->
+
+
+        <div class="row">
+            <!-- div to hold day-1 -->
+            <div id="day-one" class="col-md-4 day"></div>
+
+            <!-- div to hold day-2 -->
+            <div id="day-two" class="col-md-4 day"></div>
+
+            <!-- div to hold day-3 -->
+            <div id="day-three" class="col-md-4 day"></div>
+        </div> <!-- row end -->
+
+
+        <!-- audio clip for mouseEnter -->
+        <audio id="mySoundClip">
+            <source src="/img/weather/jake.mov"></source>
+        </audio>
+
+
+    </div> <!-- container end -->
+
+<!-- Script to Load the Google Maps API -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVA8GE8m5qdHumyaoYLjRG1e0N_qIn3Co&libraries=places"></script>
+<!-- bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<!-- jQuery Script   -->
+<!-- <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script> -->
+<script type="text/javascript" src="js/weather.js">
+</script>
+</body>
+</html>

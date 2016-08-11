@@ -1,0 +1,52 @@
+#background {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: no-repeat;
+    background-size: cover;
+}
+
+#map-canvas {
+    margin-top: 30px;
+    height: 400px;
+}
+
+
+#video {
+    background-size: cover;
+    margin-left: 350px;
+    margin-top: 200px;
+    margin-bottom: 300px;
+}
+
+
+#city {
+    text-align: center;
+    color: #2EFE9A;
+    font-size: 40px;
+}
+
+#day-one {
+    text-align: center;
+    color: #2EFE9A;
+    font-size: 20px;
+}
+
+#day-two {
+    text-align: center;
+    color: #2EFE9A;
+    font-size: 20px;
+}
+
+#day-three {
+    text-align: center;
+    color: #2EFE9A;
+    font-size: 20px;
+}
