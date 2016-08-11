@@ -20,5 +20,6 @@ body {
     margin: none;
 }
 
-div > .col-xs-4
-
+li > a {
+    padding-top: 7px;
+}
