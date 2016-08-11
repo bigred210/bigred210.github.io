@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+ <html>
+<head>
+    <meta charset="utf-8">
+    <title>SIMPLE WARS</title>
+    <link rel="stylesheet" href="css/simon.css">
+
+</head>
+<body>
+    <div class="container">
+
+        <div id="secret_video">
+            <video preload="auto" id="video">
+                <source src="/img/simon/rougueOne.mp4" type="video/mp4" >
+            </video>
+        </div>
+
+        <div id="success_video">
+            <video preload="auto" id="success">
+                <source src="/img/simon/success.mp4" type="video/mp4" >
+            </video>
+        </div>
+
+        <div id="defeat_video">
+            <video preload="auto" id="defeat">
+                <source src="/img/simon/defeat.mp4" type="video/mp4" >
+            </video>
+        </div>
+
+        <div class="game">
+
+            <div id="red" class="box" data-number="0"></div>
+
+            <div id="green" class="box" data-number="1"></div>
+
+            <div id="blue" class="box" data-number="2"></div>
+
+            <div id="orange" class="box" data-number="3"></div> 
+            
+            <button id="new">NewGame</button>
+
+            <button id="start">Start</button>
+
+            <audio id="audio" preload="auto">
+                    <source src="/img/simon/lightsaber2.mov"></source>
+            </audio>
+
+        </div> <!-- game div end -->
+    </div> <!-- container div end -->
+
+<script src="https://code.jquery.com/jquery-1.12.2.min.js"integrity="sha256-lZFHibXzMHo3GGeehn1hudTAP3Sc0uKXBXAzHX1sjtk="crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/simon.js"></script>
+
+</body>
+</html>

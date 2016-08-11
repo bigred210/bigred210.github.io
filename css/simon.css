@@ -1,0 +1,96 @@
+/* body */
+body {
+    background:url("/img/simon/starwall3.jpg") no-repeat;;
+    /*width: 1280px;
+    height: 538px;*/
+}
+
+
+/* conatainer */
+.container {
+   background: transparent;
+}
+
+
+/* hidden div(s) w/ video */
+#secret_video {
+    display: none;
+    margin-top: 0px;
+    height: 720px;
+    width: 1280px;
+}
+
+#success_video {
+    display: none;
+}
+
+#success {
+    margin-top: 200px;
+    margin-left: 130px;
+    width: 1000px;
+    height: auto;
+}
+
+#defeat_video {
+    display: none;
+    height: 720px;
+    width: 1280px;
+}
+
+
+/* boxes */
+.box {
+    width: 204px;
+    height: 222px;
+    margin-right: 0px;
+    float: left;
+    padding: 0;
+    position: relative;
+    border: 0;
+}
+
+.box:nth-child(3), .box:nth-child(5) {
+    clear: left;
+}
+
+#red {
+    background: url("/img/simon/death1.png") no-repeat;
+    margin-left: 420px;
+    margin-top: 145px;
+}
+
+#green {
+    background: url("/img/simon/death3.png") no-repeat;
+    margin-top: 144px;
+}
+
+#blue {
+    background: url("/img/simon/death2.png") no-repeat;
+    margin-left: 419px;
+    margin-top: 1px;
+}
+
+#orange {
+    background: url("/img/simon/death4.png")no-repeat;
+    margin-top: 1px;
+}
+
+
+/* button */
+#start {
+    background-color: #f35f9b;
+    color: #8c439b;
+    border: 0;
+    border-radius: 10px;
+    margin-top: 680px;
+    margin-left: -126px;
+}
+
+#new {
+    background-color: #f35f9b;
+    color: #8c439b;
+    border: 0;
+    border-radius: 10px;
+    margin-left: -156px;
+}
+
