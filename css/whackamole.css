@@ -1,0 +1,105 @@
+    /* body */
+body {
+    background: url("/img/whackamole/walkingdead1.jpg")no-repeat;
+}
+
+
+    /* board / boxes */
+#gameboard {
+    cursor: url('/img/whackamole/lucille.png'),default;
+}
+
+.box {
+    background-color: transparent;
+    height: 80px;
+    width: 100px;
+    margin-top: 30px;
+    margin-left: 120px;
+    float: left;
+    position: relative;
+}
+
+#timeboard {
+    background-color: transparent;
+    color: red;
+    font-size: 50px;
+    height: 50px;
+    width: 50px;
+    margin-top: 250px;
+    margin-left: 1px;
+}
+
+#scoreboard {
+    background-color: transparent;
+    height: 50px;
+    width: 50px;
+    color: red;
+    font-size: 40px;
+    margin-left: 1110px;
+    margin-top: -48px;
+    position: relative;
+}
+
+#high-scoreboard {
+    background-color: transparent;
+    height: 200px;
+    width: 205px;
+    color: red;
+    font-size: 30px;
+    margin-left: 1000px;
+    margin-top: -85px;
+    position: relative;
+}
+
+    /* start button */
+button {
+    margin-left: 500px;
+    margin-top: 30px;
+}
+
+    /* game images */
+img {
+    display: none;
+    width: 100px;
+    height: 80px;
+    position: relative;
+}
+
+
+    /* carousel + images */
+.carousel-outer {
+    margin-left: 300px;
+}
+.shown {
+    display: inline;
+}
+
+.hidden {
+    display: inline;
+}
+
+.carousel-inner {
+    height: 230px;
+    width: 600px;
+    margin-top: -85px;
+    position: relative;
+    float: left;
+}
+
+.carousel-inner img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
