@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/cal.css">
+</head>
+<body>
+
+    <div class="container">
+        
+
+        <div id="matrixGif" style="display: none;">  
+        </div>
+
+        <div>
+            <input id="left_operand" value="" readonly>
+       
+            <input id="middle_operator" value="" readonly>
+        
+            <input id="right_operand" value="" readonly>
+        </div> <!-- end div -->
+        <div>
+            <input id="output" value="" readonly>
+        </div> <!-- end div -->
+
+        <div class="calBg">
+            <div>
+                <button id="btnClr" class="int" data-value= "C">C</button>
+                <button id="btnDivi" class="op" data-value= "/">/</button>
+                <button id="btnMult" class="op" data-value= "*">*</button>
+                <button id="btnBck" class="int" data-value= "Bck">Bck</button>
+            </div>
+            <div>
+                <button id="btn7" class="num" data-value= "7">7</button>
+                <button id="btn8" class="num" data-value= "8">8</button>
+                <button id="btn9" class="num" data-value= "9">9</button>
+                <button id="btnMin" class="op" data-value= "-">-</button>
+            </div>
+            <div>
+                <button id="btn4" class="num" data-value= "4">4</button>
+                <button id="btn5" class="num" data-value= "5">5</button>
+                <button id="btn6" class="num" data-value= "6">6</button>
+                <button id="btnAdd" class="op" data-value= "+">+</button>
+            </div>
+            <div>
+                <button id="btn1" class="num" data-value= "1">1</button>
+                <button id="btn2" class="num" data-value= "2">2</button>
+                <button id="btn3" class="num" data-value= "3">3</button>
+                <button id="btnDeci" class="int" data-value= ".">.</button>
+            </div>
+            <div>
+                <button id="btn0" class="num" data-value= "0">0</button>
+                <button id="btnDeci" class="int" data-value= ".">.</button>
+                <button id="btnPosNeg" class="int" data-value= "+/-">+/-</button>
+                <button id="btnEval" class="int" data-value= "=">=</button>
+            </div>
+        </div> <!-- calBg end -->
+
+    </div> <!-- container end -->
+
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>          
+<script type="text/javascript" src="js/cal.js"></script>
+</body>
+</html>
