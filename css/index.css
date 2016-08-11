@@ -20,6 +20,8 @@ body {
     margin: none;
 }
 
-li > a {
+@media (min-width: 768px)
+.navbar-nav>li>a {
     padding-top: 7px;
+    padding-bottom: 0px;
 }
