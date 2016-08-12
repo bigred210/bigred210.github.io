@@ -32,7 +32,7 @@
 
         /* --- paralax images --- */
     #parallax1 {
-        background-image: url('img/five/freddy.jpg');
+        background-image: url('/img/five/freddy.jpg');
     
             /* Set a specific height */
         min-height: 500px;
@@ -44,7 +44,7 @@
         background-size: cover;
     }
     #parallax2 {
-        background-image: url('img/five/bonnie.jpg');
+        background-image: url('/img/five/bonnie.jpg');
     
             /* Set a specific height */
         min-height: 500px;
@@ -56,7 +56,7 @@
         background-size: cover;
     }
     #parallax3 {
-        background-image: url('img/five/chica.jpg');
+        background-image: url('/img/five/chica.jpg');
     
             /* Set a specific height */
         min-height: 500px;
@@ -68,7 +68,7 @@
         background-size: cover;
     }
     #parallax4 {
-        background-image: url('img/five/foxy.jpg');
+        background-image: url('/img/five/foxy.jpg');
     
             /* Set a specific height */
         min-height: 500px;
