@@ -19,11 +19,11 @@
     }
 
         /* --- col xs 6 --- */
-    .col-xs-6 {
-        height: 850px;
+    .col-xs-12 , .col-md-6 {
+        height: 800px;
 
     }
-    .col-xs-6 > img, h3, p {
+    .col-xs-12 , .col-md-6 > img, h3, p {
         margin-top: 50px;
         text-align: center;
         color: white;
