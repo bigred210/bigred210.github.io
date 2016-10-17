@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildWestTattoo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Ewert" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="">
+
+    <style type="text/css">
+
+        .slideShowContainer {
+            top:0px;
+            left:0px;
+            right:0px;
+            bottom:0px;
+            margin:auto;
+            border:1px solid black;
+            background:#000;
+            box-shadow:0px 1px 20px black;
+            border-radius:5px;
+            overflow:hidden;
+        }
+        .slideShow {
+            margin:0px;
+            padding:0px;
+            list-style:none;
+        }
+        .slideShow > li {
+            top:0px;
+            left:0px;
+            display:none;
+        }
+        .slideShow img {
+            width: 300px;
+            height: 300px;
+        }
+        body {
+           background-color: black;
+        }
+        .arrows {
+            display: none;  
+            left: 0; 
+            top: 0; 
+        }
+        .btn {
+            background: transparent;
+            color: #cf3a27;
+        }
+        #parlor {
+            font-family: 'Ewert', cursive;
+            font-size: 60px;
+            text-align: center;
+            color: #1c160f;
+            text-shadow: 2px 2px #cf3a27;
+        }
+        @media (max-width: 668px) { 
+            #parlor {
+                font-size: 20px;
+            }
+            #tatPieCov {
+                font-family: 'Ewert', cursive;
+                font-size: 20px;
+                text-shadow: 2px 2px #f5f0f0;
+            }
+        }
+        #home {
+            margin-bottom: 65px;
+            width: 100%;
+        }
+        #page1 {
+            display: none;
+            padding-top: 60px;
+            width: 100%;
+            height: 400px;
+            color: #cf3a27;
+        }
+        #page1 p {
+            color: #f5f0f0;
+        }
+        #page1 td {
+            color: #eadfdb;
+        }
+        #page2 {
+            display: none;
+            margin-bottom: 100px;
+            padding-top: 60px;
+            width: 100%;
+            height: 1650px;
+        }
+        #page2 img {
+            height: 350px;
+            width: 350px;
+        }
+        #page2 a {
+            color: #cf3a27;
+        }
+        #page3 {
+            display: none;
+            padding-top: -50px;
+            font-size: 20px;
+            text-align: center;
+            color: white;
+        }
+        ::-webkit-input-placeholder {
+            font-family: 'Ewert', cursive;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            text-shadow: 2px 2px #cf3a27;
+        }
+        :-moz-placeholder { /* Firefox 18- */
+            font-family: 'Ewert', cursive;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            text-shadow: 2px 2px #cf3a27;
+        }
+        ::-moz-placeholder {  /* Firefox 19+ */
+            font-family: 'Ewert', cursive;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            text-shadow: 2px 2px #cf3a27;  
+        }
+        :-ms-input-placeholder {  
+            font-family: 'Ewert', cursive;
+            font-size: 20px;
+            text-align: center;
+            color: black;
+            text-shadow: 2px 2px #cf3a27;  
+        }
+        .rounded {
+            border-radius: 10px;
+        }
+        #tatPieCov {
+            font-family: 'Ewert', cursive;
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 2px 2px #f5f0f0;
+        }
+        .fade {
+            opacity: 0;
+            -webkit-transition: opacity 2.25s linear;
+            -moz-transition: opacity 2.25s linear;
+            -ms-transition: opacity 2.25s linear;
+            -o-transition: opacity 2.25s linear;
+            transition: opacity 2.25s linear;
+        }
+     
+    </style>
+</head>
+<body>
+
+    <section id="home">
+        <div class="container-fluid" id="home">
+            <div class="col-sm-12 col-md-12">
+                <img class="img-responsive" src="img/tattoo/tattooParlor.png">
+            </div> <!-- end jumbrotron -->
+
+            <div class="col-sm-12 col-md-12">
+                <p id="parlor">
+                    Wild West Tattoo
+                </p>
+            </dix>
+            <a href="#navbar" type="button" class="home btn btn-lg btn-block">PARLOR ENTRANCE</a>
+        </div> <!-- end container-fluid -->
+    </section> <!-- end home section -->
+
+    <section id="page1">
+
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://bigred210.github.io/">JWest</a>
+                </div> <!-- nav header end -->
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#page1"></span> Home</a></li>
+                        <li><a href="#page2"></span> Photo</a></li>
+                        <li><a href="#page3"></span> Contact</a></li>
+                    </ul>
+                </div> <!-- nav collapse end -->
+            </div> <!-- nav container end -->
+        </nav> <!-- navbar end -->
+
+        <div class="col-sm-12 col-md-6">
+            <div>
+                <img class="img-responsive img-rounded" src="img/tattoo/tattooparlor2.png">
+            </div>
+        </div> <!-- end col -->
+         <div class="col-sm-12 col-md-6">
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <H1>
+                        Deep in the heart of <img src="img/tattoo/texas.png">
+                    </H1>
+                    <p>
+                        Nestled in beautiful downtown San Antonio. <strong> Wild West Tatoo Parlor </strong> is host to some of the best artist in the state.  With our southern hospitality and award winning customer service we guarantee you will have a great experience.
+                    </p>
+                </div> <!-- end col -->
+            </div> <!-- end row -->
+            <br>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <table style="width:100%">
+                        <tr>
+                            <th colspan="1"><h4>Phone Number</h4></th>
+                            <th colspan="2"><h4>Address</h4></th>
+                        </tr>
+                        <tr>
+                            <td>(210) 222-1234</td>
+                            <td>600 Houston St. SA,TX 78000</td>
+                        </tr>
+                    </table>  
+                </div> <!-- end col -->
+            </div> <!-- end row -->
+            <br>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <table style="width:100%">
+                        <tr>
+                            <th colspan="4"><h4>Hours of Operation</h4></th>
+                        </tr>
+                        <tr>
+                            <td>Monday</td>
+                            <td>Tuesday</td>
+                            <td>Wednesday</td>
+                            <td>tdursday</td>
+                            <td>Friday</td>
+                            <td>Saturday</td>
+                            <td>Sunday</td>
+                        </tr>
+                        <tr>
+                            <td>10a-10p</td>
+                            <td>10a-10p</td>
+                            <td>10a-10p</td>
+                            <td>10a-10p</td>
+                            <td>10a-12a</td>
+                            <td>10a-12a</td>
+                            <td>Closed</td>
+                        </tr>
+                    </table>
+                </div> <!-- end col -->
+            </div> <!-- end row -->
+        </div> <!-- end col -->
+    </section> <!-- end page1 section -->
+
+    <section>
+        <div class="row" id="page2">
+            <div id="tatPieCov" class="col-sm-12 col-md-12">
+
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tabnav">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div> <!-- nav header end -->
+                    <div class="collapse navbar-collapse" id="tabnav">
+                        <ul class="nav nav-tabs nav-justified">
+                          <li><a href="#tattoos" data-toggle="tab" >Tattoos</a></li>
+                          <li><a href="#piercings" data-toggle="tab" >Piercings</a></li>
+                          <li><a href="#coverUps" data-toggle="tab" >Cover Ups</a></li>
+                        </ul>
+                    </div> <!-- end of collapse tabs -->
+                </div> <!-- nav container end -->
+
+                <div class="tab-content">
+                    <div class="tab-pane fade in active" id="tattoos">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo1.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo2.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo3.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo4.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo5.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo6.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo7.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo8.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo9.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo10.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo11.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/tattoo12.jpeg" class="thumbnail img-responsive">
+                        </div>
+                    </div> <!-- end tattoos content -->
+
+                    <div class="tab-pane fade" id="piercings">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce1.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce2.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce3.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce4.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce5.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce6.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce7.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce8.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce1.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce2.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce3.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/pierce4.jpeg" class="thumbnail img-responsive">
+                        </div>
+                    </div> <!-- end piercings content -->
+
+                    <div class="tab-pane fade" id="coverUps">
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover1.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover2.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover3.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover4.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover5.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover6.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover1.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover2.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover3.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover4.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover5.jpeg" class="thumbnail img-responsive">
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4">
+                            <img src="img/tattoo/cover6.jpeg" class="thumbnail img-responsive">
+                        </div>
+                    </div> <!-- end coverUps content -->
+                </div> <!-- end tab content -->
+            </div> <!-- end col -->
+        </div> <!-- end row-->
+    </section> <!-- end pages section -->
+
+    <section id="page3">
+        <div class="col-sm-12 col-md-4 placeholder">
+            <form>
+                <input placeholder="Name" type="text" class="rounded" name="name">
+                    <br>
+                <input placeholder="Phone" type="text" class="rounded" name="phone">
+                <br>
+                <textarea placeholder="How can we help" rows="4" cols="25" class="rounded" name="comment">
+                </textarea>
+            </form>
+            <button type="button" class="btn btn-danger">Submit</button>
+        </div> <!-- end col -->
+
+        <div class="col-sm-12 col-md-4">     
+            <div class="slideShowContainer">
+                <ul class="slideShow">
+                    <li><img class="img-responsive" src="img/tattoo/wArrow.png"></li>
+                    <li><img class="img-responsive" src="img/tattoo/iArrow.png"></li>
+                    <li><img class="img-responsive" src="img/tattoo/lArrow.png"></li>
+                    <li><img class="img-responsive" src="img/tattoo/dArrow.png"></li>
+                    <li><img class="img-responsive" src="img/tattoo/wArrow.png"></li>
+                    <li><img class="img-responsive" src="img/tattoo/eArrow.png"></li>
+                    <li><img class="img-responsive" src="img/tattoo/sArrow.png"></li>
+                    <li><img class="img-responsive" src="img/tattoo/tArrow.png"></li>
+                </ul>
+            </div>     
+        </div> <!-- end col -->
+
+        <div class="col-sm-12 col-md-4">
+            <row>
+                <div class="col-sm-12 col-md-12">
+                    <h3 id="comment"></h3>
+                </div>
+            </row>
+            <row>
+                <div class="col-sm-12 col-md-12">
+                    <h3> Awarded San Antonio's Best </h3>
+                    <p> 2010 , 2011 , 2013 , 2014 , 2015 </p>
+                </div>
+            </row>
+        </div> <!-- end col -->
+
+    </section> <!-- end pages section -->
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript">
+    "use strict";
+
+
+    $(function() {
+
+        var slides = $('.slideShow>li');
+        var slideCount = 0;
+        var totalSlides = slides.length;
+        var slideCache = [];
+
+            (function preloader() {
+                if(slideCount < totalSlides) {
+                    // load images
+                    slideCache[slideCount] = new Image();
+                    slideCache[slideCount].src = slides.eq(slideCount).find('img').attr('src');
+                    slideCache[slideCount].onload = function() {
+                        slideCount++;
+                        preloader();
+                    }
+                } else {
+                    // run slide show
+                    slideCount = 0;
+                    SlideShow();
+                }
+
+            }());
+
+            function SlideShow() {
+                slides.eq(slideCount).show(0).delay(1000).hide(0, function() {
+                    slideCount < totalSlides - 1 ? slideCount++ : slideCount=0;
+                    SlideShow();
+                });
+            }
+    });
+
+    $('.home').on('click',function(){
+        $('#home').hide(0);
+        $('#page1').show(0);
+        $('#page2').show(0);
+        $('#page3').show(0);
+    });
+
+                // this will allow a random trait to be made visible within the ID=trait.
+    var trait = setInterval(comments, 2000);
+
+    function comments() {
+        var comment = [ 
+            "These guys rock! -Jane", 
+            "Best artist around...PERIOD!  -Jack", 
+            "My cover up looks amazing!  -Janice", 
+            "I Heart WildWestTattooParlor  -Tiffany", 
+            "Quick n Easy -Marcus", 
+            "The best tattoo parlor I have visited. -Remington", 
+            "Great people, great artist, fun atmosphere. -John", 
+            "Blown away by the talent here! -Niki", 
+            "I was treated like royalty here -Jerod", 
+            "What an awesome parlor this is -Jill", 
+            "Patient, Kind, and True Artist -Jenny", 
+            "Shake N Bake baby..these people ROCK! -Jonah",  
+        ];
+        var rndComment = comment[Math.floor(Math.random() * comment.length)];
+        document.getElementById("comment").innerHTML = rndComment;
+    }
+
+</script>
+</body>
+</html>
