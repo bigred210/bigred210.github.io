@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>2016 Election</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="">
+
+    <style type="text/css">
+
+        body {
+            background-color: #002c77;
+            color: white;
+            /*cursor: url('img/seal.png'),default;*/
+        }
+        .jumbotron {
+            background-image: url('img/quiz/partyicon1.jpg');
+            background-repeat: no-repeat;
+            height: 224px;
+            margin-top: 80px;
+        }
+        a {
+            color: #bb133e;
+        }
+        .btn-block {
+            background-color: #bb133e;
+        }
+        #quiz {
+            background-color: rgba(187,19,62, .5); 
+        }
+        #faq {
+            color: rgb(0,44,119);
+        }
+        #about {
+            color: rgb(0,44,119); 
+        }
+        .modal-header {
+            color: #bb133e;
+            text-align: center;
+        }
+        .modal-body {
+            color: #002c77;
+        }
+        div #test {
+            border:#000 1px solid; padding:10px 10px 10px 10px; 
+            color: #bb133e;
+        }
+        div #test_status {
+            color: #002c77;
+        }
+        .answer {
+            background-color: #002c77;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="jumbotron">
+
+        </div> <!-- end jumbotron -->
+
+        <h4>
+            Take this quick quiz to find out who you are more likely to vote for. The answer may surprise you.
+        </h4>
+
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg btn-block" data-toggle="modal" data-target="#quiz">Open Quiz</button>
+
+        <!-- Modal -->
+        <div id="quiz" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">2016 Election</h3>
+                </div>
+                <div class="modal-body">
+                    <h2 id="test_status"></h2>
+                    <div id="test"></div>
+                </div>
+                <div class="modal-footer">
+                    <img src="img/quiz/electionFlag.png">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div> <!-- end modal content -->
+
+          </div>
+        </div> <!-- end modal -->
+
+        <div class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="http://bigred210.github.io/">JWest</a>
+                </div> <!-- nav header end -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#" data-toggle="modal" data-target="#faqs">FAQS</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#about">ABOUT</a></li>
+                </ul> <!-- nav ul end -->
+            </div> <!-- nav container end -->
+        </div> <!-- navbar end -->
+
+        <!-- Modal  for facts-->
+        <div id="faqs" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Frequently asked questions</h3>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <h4> Where did I get my questions and answers from?</h4>
+                        <ul>
+                            <li><a href="http://2016election.procon.org/view.source-summary-chart.php">2016 Pro/Con.Org</a></li>  
+                        </ul> <!-- ul end -->
+                        <h4> Where can I go to find out if I am a registered voter?</h4>
+                        <ul>
+                            <li><a href="http://www.canivote.org/">CanIVote.Org</a></li>
+                            <li><a href="https://www.headcount.org/verify-voter-registration/">HeadCount.Org</a></li>
+                        </ul> <!-- ul end -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <img src="img/quiz/campaign.jpg">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div> <!-- end modal content -->
+
+          </div>
+        </div> <!-- end facts modal -->
+
+        <!-- Modal for about -->
+        <div id="about" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">About the site</h3>
+                </div>
+                <div class="modal-body">
+                    <h2>My intedend goals of the quiz and site.</h2>
+                    <div>
+                        <p>
+                            To many times I have come across someone who swears to vote soley by what they heard from a friend of a friend, or from diluted news sources.  I wanted to create a site that would utilize a quiz that people could use. This quiz will show them where they stand on certain issues and have that measured against where they stand with a Presidential Candidate.
+                        </p>
+                    </div>
+                    <h2>Understand the grading process.</h2>
+                    <div>
+                        <p>
+                            The quiz is twenty eight questions long. Using a simple grading system we can draw a conclusion on a graded score. I set up the quiz to follow a specific candidate. This will allow the quiz to be graded in a manner that we could dived the score to see where the person stood on the issues. Below I show a simple table describing this process.
+                        </p>
+                    </div>
+                    <ul>
+                        <li>20-28 = Hillary Clinton</li>
+                        <li>14-19 = In Between</li>
+                        <li>0-13 = Donald Trump</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <img src="img/quiz/campaign2.jpeg">
+                    <button type="button" class="btn btn-default btn-block" data-dismiss="modal">Close</button>
+                </div>
+            </div> <!-- end modal content -->
+
+          </div>
+        </div> <!-- end about modal -->
+
+    </div> <!-- container end -->
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script type="text/javascript">
+    "use strict";
+
+        var pos = 0, test, test_status, question, choice, choices, chA, chB, correct = 0;
+        var questions = [
+            [ "Should the United States Abide by Its Treaties with Native American Tribes?", "Pro", "Con", "A" ],
+            [ "Should Private Prisons Be Allowed in the United States?", "Pro", "Con", "B" ],
+            [ "Should Any Federal Taxes Be Increased?", "Pro", "Con", "A" ],
+            [ "Should Social Security Be Privatized?", "Pro", "Con", "B" ],
+            [ "Should There Be a Flat Tax on Income?", "Pro", "Con", "B" ],
+            [ "Should Any Public Colleges or Universities Be Tuition-Free?", "Pro", "Con", "A" ],
+            [ "Should Felons Who Have Completed Their Sentences (Incarceration, Probation, and Parole) Be Allowed to Vote?", "Pro", "Con", "A" ],
+            [ "Should Voters Be Required to Show Photo Identification in Order to Vote?", "Pro", "Con", "B" ],
+            [ "Should US Election Campaigns Be Publicly Financed?", "Pro", "Con", "A" ],
+            [ "Is the Nuclear Arms Deal with Iran Good for America?", "Pro", "Con", "A" ],
+            [ "Should There Be an Independent Palestinian State?", "Pro", "Con", "A" ],
+            [ "Should More Gun Control Laws Be Enacted?", "Pro", "Con", "A" ],
+            [ "Should Abortion Be Legal?", "Pro", "Con", "A" ],
+            [ "Is Obamacare Good for America?", "Pro", "Con", "A" ],
+            [ "Should Parental Consent Be Required for Pregnant Minors to Have Abortions?", "Pro", "Con", "B" ],
+            [ "Should Euthanasia or Physician-Assisted Suicide Be Legal?", "Pro", "Con", "A" ],
+            [ "Should the Federal Government Use Raids to Enforce Immigration Laws?", "Pro", "Con", "B" ],
+            [ "Should the United States Allow Syrian Refugees into the Country?", "Pro", "Con", "A" ],
+            [ "Should Undocumented Immigrants in the United States Be Allowed to Become Legal Residents?", "Pro", "Con", "A" ],
+            [ "Should the United States Send Ground Troops to Fight ISIS?", "Pro", "Con", "B" ],
+            [ "Should the United States Close the Guantanamo Bay Detention Camp?", "Pro", "Con", "A" ],
+            [ "Should the National Security Agency (NSA) Continue to Collect Phone and Email Metadata on US Citizens?", "Pro", "Con", "B" ],
+            [ "Is Human Activity Primarily Responsible for Global Climate Change?", "Pro", "Con", "A" ],
+            [ "Should Genetically Modified (GMO) Foods Have Mandatory Labeling?", "Pro", "Con", "A" ],
+            [ "Should Transgender People Be Allowed to Use the Bathroom of Their Choice?", "Pro", "Con", "A" ],
+            [ "Is the Black Lives Matter Movement Good for America?", "Pro", "Con", "A" ],
+            [ "Should the United States Transition Away from Fossil Fuels and Towards Renewable Energy?", "Pro", "Con", "A" ],
+            [ "Should the United States Authorize the Keystone XL Pipeline to Import Tar Sand Oil from Canada?", "Pro", "Con", "B" ]
+        ];
+
+        function _(x){
+            return document.getElementById(x);
+        }
+
+        function renderQuestion(){
+            test = _("test");
+            if(pos >= questions.length && correct >= 20){
+                test.innerHTML = "<h2>You matched "+correct+" of "+questions.length+" questions. It is safe to say you should vote for Hillary</h2>";
+                _("test_status").innerHTML = "Test Completed";
+            } else if (pos >= questions.length && correct >=14) {
+                test.innerHTML = "<h2>You matched "+correct+" of "+questions.length+" questions. It is safe to say you are inbetween and should look further into where each candidate stands on the main issues.</h2>";
+                _("test_status").innerHTML = "Test Completed";
+            } else if (pos >= questions.length && correct <= 13) {
+                test.innerHTML = "<h2>You matched "+correct+" of "+questions.length+" questions. It is safe to say you should vote for TRUMP</h2>";
+                _("test_status").innerHTML = "Test Completed";
+
+                pos = 0;
+                correct = 0;
+                return false;
+            }
+
+            _("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+            question = questions[pos][0];
+            chA = questions[pos][1];
+            chB = questions[pos][2];
+            test.innerHTML = "<h3>"+question+"</h3>";
+            test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+            test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br><br>";
+            test.innerHTML += "<button class='answer btn' onclick='checkAnswer()'>Submit Answer</button>";
+        }
+        function checkAnswer(){
+            choices = document.getElementsByName("choices");
+            for(var i=0; i<choices.length; i++){
+                if(choices[i].checked){
+                    choice = choices[i].value;
+                }
+            }
+            if(choice == questions[pos][3]){
+                correct++;
+            }
+            pos++;
+            renderQuestion();
+        }
+        window.addEventListener("load", renderQuestion, false);
+
+</script>
+</body>
+</html>
