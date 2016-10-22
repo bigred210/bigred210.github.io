@@ -1,489 +1,243 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<head>
+    <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>J.WEST</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato | Offside" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JWest.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style type="text/css">
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content=""/>
+    <meta property="og:image" content=""/>
+    <meta property="og:url" content=""/>
+    <meta property="og:site_name" content=""/>
+    <meta property="og:description" content=""/>
+    <meta name="twitter:title" content="" />
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="" />
 
-    /*  ----  #home  ----   */
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,800" rel="stylesheet">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="gitPortfolio/css/animate.css">
+    <!-- Icomoon Icon Fonts-->
+    <link rel="stylesheet" href="gitPortfolio/css/icomoon.css">
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="gitPortfolio/css/bootstrap.css">
+    
+    <!-- Owl Carousel  -->
+    <link rel="stylesheet" href="gitPortfolio/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="gitPortfolio/css/owl.theme.default.min.css">
 
-            /*general css*/
-        @media screen and (max-width: 640px){
-            .jumbotron .name p {
-                height: 85px;
-                font-size: 35px;
-                text-align: center;
-                margin-top: 30px;
-                color: #ecf0f1;
-            }
-            #trait {
-                color: #34495e;
-                font-size: 30px;
-                text-align: center;
-                margin-top: 30px;
-            }
-        }
-            /* #about */
-        #about {
-            background-color: #f6e850;
-            height: 260px;
-            width: 640px;
-            font-family: 'Offside', regular;
-            text-align: center;
-            font-size: 50px;
-        }
-        #about img{
-            display: inline-block;
-            margin-top: 70px;
-        }
-            /* #works */
-        #works {
-            background-color: #4ec4ba;
-            height: 260px;
-            width: 640px;
-            font-family: 'Lato', sans-serif;
-            text-align: center;
-            font-size: 50px;
-        }
-        #works img{
-            display: inline-block;
-            margin-top: 80px;
-        }
-            /* #jrod*/
-        .jumbotron {
-            background-image: url('/img/gitidea/fltbck.jpg');
-            min-height: 200px;
-            background-position: center;
-            background-repeat: no-repeat;
-            padding: 0px;
-            margin: 0px;
-            width: 1280px;
-            background-size: 100% 100%;
-            -moz-background-size: 100% 100%;
-            -webkit-background-size: 100% 100%;
-            -o-background-size: 100% 100%;
-            margin-bottom: 0px;
-        } 
-        .jumbotron .name p {
-            height: 85px;
-            font-size: 80px;
-            text-align: center;
-            margin-top: 30px;
-            color: #ecf0f1;
-        }
-        #trait {
-            color: #34495e;
-            font-size: 80px;
-            text-align: center;
-            margin-top: 30px;
-        }
-            /* #contact */
-        #contact {
-            background-color: #cf6181;
-            height: 270px;
-            width: 640px;
-            font-family: 'Offside', cursive;
-            text-align: center;
-            font-size: 50px;
-        }
-        #contact img{
-            display: inline-block;
-            margin-top: 70px;
-        }
-            /* #skills */
-        #skills {
-            background-color: #80ce7c;
-            height: 270px;
-            width: 640px;
-            font-family: 'Offside', regular;
-            text-align: center;
-            font-size: 50px;
-        }
-        #skills img{
-            display: inline-block;
-            margin-top: 70px;
-        }
+    <!-- Theme style  -->
+    <link rel="stylesheet" href="gitPortfolio/css/style.css">
 
+    <!-- Modernizr JS -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- FOR IE9 below -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
 
-    /*  ----  #aboutMe   ----  */
-        .section2 {
-            background-color: #f6e850;
-            color: #674172;
-            font-family: 'Offside', regular;
-            font-size: 15px;
-        }
-        #myPic {
-            /*background-color: #FDE3A7;*/
-        }
-        hr {
-            width: 200px;
-            border: 0;
-            height: 0; /* Firefox... */
-            box-shadow: 0 0 5px 1px #674172;
-        }
-        hr:after {  /* Not really supposed to work, but does */
-            content: "\00a0";  /* Prevent margin collapse */
-        }
-        .hello, .facts h1 {
-            text-align: center;
-        }
-        .hello, .facts {
-          font-size: 20px;
-          padding-top: 20px;
-
-        }
-        td > img {
-            text-align: center;
-            /*padding-bottom: 10px;*/
-        }
-
-
-
-    /* ----   #myWorks ----    */
-        #myWorks {
-            background-color: #4ec4ba;
-            text-align: center;
-        }
-        .workNav .col-xs-12 .col-md-12 {
-            margin: 0;
-        }
-        div .col-xs-12 .col-md-4 {
-            margin-bottom: 5px;
-        }
-        #work h1 {
-            text-align: center;
-            font-family: 'Offside', regular;
-            color: #E4F1FE;
-        }
-        #work hr {
-            width: 50px;
-            border: 0;
-            height: 0; /* Firefox... */
-            box-shadow: 0 0 5px 1px #6C7A89;
-        }
-        hr:after {  /* Not really supposed to work, but does */
-            content: "\00a0";  /* Prevent margin collapse */
-        }
-        .sites , .apps {
-            padding-bottom: 25px;
-            padding-top: 20px;
-        }
-
-
-
-
-    /*  ----  #mySkills   ----  */
-
-        .section4 {
-            background-color: #80ce7c;
-        }
-
-
-
-    /*  ----  #contactMe  ----   */
-
-        .section5 {
-            background-color: #cf6181;
-        }
-        .contacts {
-            padding-top: 150px;
-        }
-
-
-
-
-
-    </style>
-
-</head>
-<body>
-
-    <div id="home" class="section1 container-fluid">
-
-        <div class="row">
-            <div id="about" class="col-xs-12 col-md-6">
-               <div class="row">
-                    <div>
-                       <a href="#aboutMe"><img id="resize" src="img/gitidea/about.png"></a>
+    </head>
+    <body>
+        
+    <div class="fh5co-loader"></div>
+    
+    <div id="page">
+        <nav class="fh5co-nav" role="navigation">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <div id="fh5co-logo"><a href="gitPage.html">JWest<span>.</span></a></div>
+                        </div>
+                        <div class="col-xs-10 text-right menu-1">
+                            <ul>
+                                <!-- <li class="active"><a href="index.html">Home</a></li> -->
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#work">Work</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
                     </div>
-                </div> 
-            </div> <!-- end of aboutMe -->
-            <div id="works" class="col-xs-12 col-md-6">
+                    
+                </div>
+            </div>
+        </nav>
+
+        <header id="fh5co-header home" class="fh5co-cover" role="banner" style="background-image:url(images/bck1.jpg);" data-stellar-background-ratio="0.5">
+            <div class="overlay"></div>
+            <div class="container">
                 <div class="row">
-                    <div>
-                       <a href="#myWorks"><img id="resize" src="img/gitidea/flatmac.png"></a>
+                    <div class="col-md-6">
+                        <div class="display-t">
+                            <div class="display-tc animate-box" data-animate-effect="fadeIn">
+                                <h1>Jerod West </h1>
+                                <h1><strong id="trait"></strong></h1>
+                                <p><a href="#fh5co-project" class="btn btn-primary btn-lg with-arrow">View My Work</a></p>
+                            </div>
+                        </div>
                     </div>
-                </div>  
-            </div> <!-- end of myWorks -->
-        </div> <!-- end of row -->
+                </div>
+            </div>
+        </header>
 
-        <div id="jrod" class="row">
-            <div class="jumbotron img-responsive">
+        <div id="fh5co-services about" class="fh5co-bg-section">
+            <div class="container">
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <h2>HELLO,</h2>
+                        <p>My name is Jerod. I'm located in the beautiful city of San Antonio, Texas. I consider myself primarily a web designer and front-end developer. I also have experience in branding and print design (business cards, flyers, brochures, posters etc) too. So if you’re a business in need of a new website, brand refresh, or maybe you’re an agency in need of an extra pair of hands, I'm here for you. </p>
+                    </div>
+                </div>
                 <div class="row">
-                    <div class="col-xs-12 col-md-6 name">
-                        <p>Jerod West</p>
+                    <div class="col-md-6">
+                        <div class="iphone">
+                            <img class="img-responsive img-rounded" src="images/me copy.png" alt="me">
+                        </div>
                     </div>
-                    <div class="col-xs-12 col-md-6">
-                        <p id="trait"></p>
-                    </div>
-                </div> <!-- end of row -->
-            </div> <!-- end of jumbotron -->
-        </div> <!-- end of jrod -->
-
-        <div class="row">
-            <div id="contact" class="col-xs-12 col-md-6">
-                <div class="row">
-                    <div>
-                        <a href="#contactMe"><img id="resize" src="img/gitidea/contact.png"></a>
-                    </div>
-                </div> 
-            </div> <!-- end of contactMe -->
-            <div id="skills" class="col-xs-12 col-md-6">
-                <div class="row">
-                    <div>
-                        <a href="#mySkills"><img id="resize" src="img/gitidea/skills.png"></a>
-                    </div>
-                </div> 
-            </div> <!-- end of mySkills -->
-        </div> <!-- end of row -->
-
-    </div> <!-- end of section1 -->
-
-    <div id="aboutMe" class="section2 container-fluid">
-
-        <div class="row">
-            <div id="myPic" class="col-xs-12 col-md-3">
-               <div class="row">
-                    <div>
-                       <img src="img/gitidea/me copy.png">
-                    </div>
-                </div> 
-            </div> <!-- end of myPic -->
-
-            <div id="statement" class="col-xs-12 col-md-6">
-                <div class="row">
-                    <div class="hello col-xs-12 col-md-12">
-                        <h1> HI, MY NAME IS JEROD WEST</h1>
-                        <hr>
-                        <p>
-                            I'm located in beautiful San Antonio, Texas. I consider myself primarily a web designer and front-end developer. I also have experience in branding and print design (business cards, flyers, brochures, posters etc) too. So if you’re a business in need of a new website, brand refresh, or maybe you’re an agency in need of an extra pair of hands, I'm here for you. 
-                        </p>
-                    </div> <!-- end of .hello -->
-                </div> <!-- end of row -->
-                <div class="row">
-                    <div class="facts col-xs-12 col-md-12">
-                        <h1>FACTS ABOUT ME</h1>
-                        <hr>
-                        <table style="width:100%">
-                            <tr>
-                                <td><img src="img/gitidea/famly.png"></td>
-                                <td>I love spending time with my wife and 2 children</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/gitidea/code.png"></td>
-                                <td>I enjoy creating sites and designs</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/gitidea/cook.png"></td>
-                                <td>I'm a true Foodie and like cooking</td>
-                            </tr>
-                            <tr>
-                                <td><img src="img/gitidea/guitar.png"></td>
-                                <td>I play guitar and drums when time allows me</td>
-                            </tr>
-                        </table>
-                    </div> <!-- end of .facts -->
-                </div> <!-- end of row -->
-
-            </div> <!-- end of #statement -->
-
-            <div class="aboutNav col-xs-12 col-md-3">
-                <div class="home row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#home"><img id="resize" src="img/gitidea/home1.png"></a>
+                    <div class="col-md-6">
+                        <div class="row services-inner">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                                    <span class="icon">
+                                        <i class="icon-heart"></i>
+                                    </span>
+                                    <h3>Family First</h3>
+                                    <p>I love spending time with my wife and two children. They are my world and it is with them that you will find me when I am not working.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                                    <span class="icon">
+                                        <i class="icon-laptop"></i>
+                                    </span>
+                                    <h3>Design and Coding</h3>
+                                    <p>I consider myself primarily a web designer and front-end developer. I also have experience in branding and print design (business cards, flyers, brochures, posters etc) too. So if you’re a business in need of a new website, brand refresh, or maybe you’re an agency in need of an extra pair of hands, I'm here for you.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12">
+                                <div class="feature-center animate-box" data-animate-effect="fadeIn">
+                                    <span class="icon">
+                                        <i class="icon-hour-glass"></i>
+                                    </span>
+                                    <h3>Spare Time</h3>
+                                    <p>I am a true Foodie, and quite the accomplished chef. I like to showcase my skills by cooking and preparing meals for family and friends from scratch.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="works row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#myWorks"><img id="resize" src="img/gitidea/works1.png"></a>
+            </div>
+        </div>
+        
+        <div id="fh5co-project work">
+            <div class="container">
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <h2>My Works</h2>
                     </div>
                 </div>
-                <div class="skills row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#mySkills"><img id="resize" src="img/gitidea/skills1.png"></a>
+            </div>
+            <div class="project-content">
+                <div class="col-forth">
+                    <div class="project animate-box" style="background-image:url(gitPortfolio/images/coding.png);">
+                        <a href="codingkids.xyz" class="desc">
+                            <h3>Coding Kids</h3>
+                        </a>
                     </div>
                 </div>
-                <div class="contact row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#contactMe"><img id="resize" src="img/gitidea/contact1.png"></a>
+                <div class="col-forth">
+                    <div class="project animate-box" style="background-image:url(gitPortfolio/images/election.png);">
+                        <a href="http://bigred210.github.io/quiz_2016.html" class="desc">
+                            <h3>Presidential Quiz</h3>
+                        </a>
                     </div>
                 </div>
-            </div> <!-- end of aboutNav -->
-
-        </div> <!-- end of row -->
-
-    </div> <!-- end of #aboutMe section2 -->
-
-    <div id="myWorks" class="section3 container-fluid">
-
-        <div class="row">
-
-            <div id="work" class="col-xs-12 col-md-9">
-                <div class="row">
-                    <div class="col-xs-12 col-md-6"</div>
-                        <h1>My Work</h1>
-                        <hr>
+                <div class="col-forth">
+                    <div class="project animate-box" style="background-image:url(gitPortfolio/images/weather.png);">
+                        <a href="http://bigred210.github.io/weather_map.html" class="desc">
+                            <h3>Weather Map</h3>
+                        </a>
                     </div>
                 </div>
-                <div class="sites row">
-                    <div class="col-xs-12 col-md-4">
-                        <a href="http://codingkids.xyz/"><img class="img-rounded" src="img/gitidea/coding.png"></a>
+                <div class="col-forth">
+                    <div class="project animate-box" style="background-image:url(gitPortfolio/gitPortfolio/images/simon.png);">
+                        <a href="http://bigred210.github.io/simon.html" class="desc">
+                            <h3>Simon Says</h3>
+                        </a>
                     </div>
-                    <div class="col-xs-12 col-md-4">
-                        <a href="http://bigred210.github.io/quiz_2016.html"><img class="img-rounded" src="img/gitidea/election.png"></a>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <a href="http://bigred210.github.io/pokemon.html"><img class="img-rounded" src="img/gitidea/pokemon.png"></a>
-                    </div>
-                </div> <!-- end of row -->
-                <div class="apps row">
-                    <div class="col-xs-12 col-md-4">
-                        <a href="http://bigred210.github.io/weather_map.html"><img class="img-rounded" src="img/gitidea/weather.png"></a>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <a href="http://bigred210.github.io/whackamole.html"><img class="img-rounded" src="img/gitidea/whackamole.png"></a>
-                    </div>
-                    <div class="col-xs-12 col-md-4">
-                        <a href="http://bigred210.github.io/simon.html"><img class="img-rounded" src="img/gitidea/simon.png"></a>
-                    </div>
-                </div> <!-- end of row -->
-            </div> <!-- end of work -->
-
-            <div class="workNav col-xs-12 col-md-3">
-                <div class="home row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#home"><img id="resize" src="img/gitidea/home1.png"></a>
-                    </div>
-                </div>
-                <div class="works row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#aboutMe"><img id="resize" src="img/gitidea/about1.png"></a>
-                    </div>
-                </div>
-                <div class="skills row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#mySkills"><img id="resize" src="img/gitidea/skills1.png"></a>
-                    </div>
-                </div>
-                <div class="contact row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#contactMe"><img id="resize" src="img/gitidea/contact1.png"></a>
-                    </div>
-                </div>
-            </div> <!-- end of workNav -->
-
-        </div> <!-- end of row -->
-
-    </div> <!-- end of section3 -->
-
-
-    <div id="mySkills" class="section4 container-fluid">
-
-         <div class="skillsNav col-xs-12 col-md-3">
-                <div class="home row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#home"><img id="resize" src="img/gitidea/home1.png"></a>
-                    </div>
-                </div>
-                <div class="works row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#aboutMe"><img id="resize" src="img/gitidea/about1.png"></a>
-                    </div>
-                </div>
-                <div class="skills row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#mySkills"><img id="resize" src="img/gitidea/skills1.png"></a>
-                    </div>
-                </div>
-                <div class="contact row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#contactMe"><img id="resize" src="img/gitidea/contact1.png"></a>
-                    </div>
-                </div>
-            </div> <!-- end of skillsNav -->
-
-    </div> <!-- end of section5 -->
-
-
-    <div id="contactMe" class="section5 container-fluid">
-        <div class="col-xs-12 col-md-9">
-            <div class="contacts row">
-                <div class="col-xs-12 col-md-6">
-                    <a href="https://github.com/bigred210"><img class="img-rounded" src="img/gitidea/github.png"></a>
-                </div>
-                <div class="col-xs-12 col-md-6">
-                    <a href="https://www.linkedin.com/in/jerod-west-28574749"><img class="img-rounded" src="img/gitidea/linkedin.png"></a>
                 </div>
             </div>
         </div>
 
-         <div class="contactNav col-xs-12 col-md-3">
-                <div class="home row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#home"><img id="resize" src="img/gitidea/home1.png"></a>
-                    </div>
-                </div>
-                <div class="works row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#aboutMe"><img id="resize" src="img/gitidea/about1.png"></a>
-                    </div>
-                </div>
-                <div class="skills row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#mySkills"><img id="resize" src="img/gitidea/works1.png"></a>
-                    </div>
-                </div>
-                <div class="contact row">
-                    <div class="col-xs-12 col-md-12">
-                        <a href="#contactMe"><img id="resize" src="img/gitidea/skills1.png"></a>
-                    </div>
-                </div>
-            </div> <!-- end of contactNav -->
 
-    </div> <!-- end of section4 -->
+        <div id="fh5co-started contact">
+            <div class="container">
+                <div class="row animate-box">
+                    <div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+                        <h2>Contact Me</h2>
+                    </div>
+                </div>
+            </div>
 
+            <footer id="fh5co-footer" role="contentinfo">
+                <div class="container">
+                    <div class="row copyright">
+                        <div class="col-md-12 text-center">
+                            <p>
+                                <ul class="fh5co-social-icons">
+                                    <li><a href="tel:+2105893122"><i class="icon-phone"></i></a></li>
+                                    <li><a href="mailto:jerod.west@gmail.com"><i class="icon-mail"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/in/jerod-west-28574749"><i class="icon-linkedin"></i></a></li>
+                                    <li><a href="https://github.com/bigred210"><i class="icon-github"></i></a></li>
+                                </ul>
+                            </p>
+                            <p>
+                                <small class="block">&copy; JWest. All Rights Reserved.</small> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="gototop js-top">
+        <a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+    </div>
     
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script type="text/javascript">
+    <!-- jQuery -->
+    <script src="gitPortfolio/js/jquery.min.js"></script>
+    <!-- jQuery Easing -->
+    <script src="gitPortfolio/js/jquery.easing.1.3.js"></script>
+    <!-- Bootstrap -->
+    <script src="gitPortfolio/js/bootstrap.min.js"></script>
+    <!-- Waypoints -->
+    <script src="gitPortfolio/js/jquery.waypoints.min.js"></script>
+    <!-- Stellar Parallax -->
+    <script src="gitPortfolio/js/jquery.stellar.min.js"></script>
+    <!-- Carousel -->
+    <script src="gitPortfolio/js/owl.carousel.min.js"></script>
+    <!-- Main -->
+    <script src="gitPortfolio/js/main.js"></script>
+
+    <script type="text/javascript">
     "use strict";
 
-            // this will allow a random trait to be made visible within the ID=trait (section1).
+                // this will allow a random trait to be made visible within the ID=trait (section1).
     var trait = setInterval(myTraits, 1500);
 
     function myTraits() {
-        var traits = [ "Web Developer", "Father", "Dreamer", "Foodie", "Designer", ];
+        var traits = [ "Web Dev", "Father", "Dreamer", "Foodie", "Designer", ];
         var randomTrait = traits[Math.floor(Math.random() * traits.length)];
         document.getElementById("trait").innerHTML = randomTrait;
     }
 
-            // this will allow the images to animate when mouse over.
-    $('#resize, img').hover(makeBigger, returnToOriginalSize);
+    </script>
 
-    function makeBigger() {
-        $(this).css({height: '+=1%', width: '+=1%'});
-    }
-    function returnToOriginalSize() {
-        $(this).css({height: "", width: ""});
-    }
-    
-</script>
-</body>
+    </body>
 </html>
+
