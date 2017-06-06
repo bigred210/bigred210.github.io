@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="refresh" content="26;url=https://www.facebook.com/events/2333163883574807/?context=create&previousaction=create&source=2&sid_create=2833042825&action_history=[%7B%22surface%22%3A%22create_dialog%22%2C%22mechanism%22%3A%22user_create_dialog%22%2C%22extra_data%22%3A[]%7D]&has_source=1" />
+    <title>INVITE</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+  
+  body {
+    background-color: black;
+  }
+  #invite p {
+    font-size: 45px;
+    margin-top: -70px;
+    margin-left: 200px;
+    color:white;
+  }
+  #invite img {
+    top: 0; 
+    left: 0; 
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+  }
+  #cameras, #camera1, #camera2, #camera3, #scare {
+    display:none;
+  }
+  #cameras img{
+    top: 0; 
+    left: 0; 
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+  }
+  #camera1, #camera2, #camera3{
+    top: 0; 
+    left: 0; 
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+</style>
+
+</head>
+<body>
+
+    <div id="invite">
+
+        <img alt="invited" src="img/fnaf/invite.gif" id="invited">
+        <p id="words"></p>
+
+    </div> <!-- end of div #invite -->
+
+    <section id="cameras">
+
+          <div id="camera1">
+            <img alt="camera1" src="img/fnaf/page1.png" id="cam1">
+          </div> <!-- end of div #camera1 -->
+
+          <div id="camera2">
+            <img alt="camera2" src="img/fnaf/page2.png" id="cam2">
+          </div> <!-- end of div #camera2 -->
+
+          <div id="camera3">
+            <img alt="camera3" src="img/fnaf/page3.png" id="cam3">
+          </div> <!-- end of div #camera3 -->
+
+          <div id="scare">
+            <img alt="scare" src="img/fnaf/i6.gif" id="i6">
+          </div> <!-- end of div #scare-->
+
+    </section> <!-- end of section #cameras -->
+
+    <audio id="cam" src="img/fnaf/camera.ogx" type="audio/mpeg">
+    </audio> <!-- end of audio #camera -->
+
+    <audio id="cam2" src="img/fnaf/camera2.ogx" type="audio/mpeg">
+    </audio> <!-- end of audio #camera -->
+
+    <audio id="camera3" src="img/fnaf/camera3.ogx" type="audio/mpeg">
+    </audio> <!-- end of audio #camera -->
+
+    <audio id="scary" src="img/fnaf/scary.ogx" type="audio/mpeg">
+    </audio> <!-- end of audio #scary -->
+
+    <audio id="fuzzy" src="img/fnaf/fuzzy.ogx" type="audio/mpeg">
+    </audio> <!-- end of audio #fuzzy -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+<script type="text/javascript">
+
+    $('#words').typeIt({
+      strings: ["You are invited to Aedan's 10th Birthday Party.", "...but will you survive..."],
+      speed: 20,
+      breakLines: false,
+      autoStart: false
+    });
+    
+    $('#invite').delay(3700).hide(0);
+
+    $('#cameras').delay(6000).show(0);
+   
+    $('#camera1').delay(6000).show(0).fadeOut(5500).hide(0);
+
+    $('#camera2').delay(11500).show(0).fadeOut(5500).hide(0);
+
+    $('#camera3').delay(17000).show(0).fadeOut(5500).hide(0);
+
+    $('#scare').delay(22500).show(0).delay(3000).hide(0);
+
+    var noise1 = document.getElementById('cam');
+    var noise2 = document.getElementById('cam2');
+    var noise4 = document.getElementById('fuzzy');
+    var noise5 = document.getElementById('scary')
+
+    setTimeout(function() {
+        noise1.play(); 
+        console.log('1');
+    }, 5000);
+
+    setTimeout(function() {
+        noise1.pause(); 
+        console.log('1.5');
+    }, 8000);    
+
+    setTimeout(function() {
+        noise4.play();
+        console.log('4');
+    }, 0);
+
+    setTimeout(function() {
+        noise1.play(); 
+        console.log('2');
+    }, 8500);
+
+    setTimeout(function() {
+        noise1.play(); 
+        console.log('2.5');
+    }, 11000);
+
+    setTimeout(function() {
+        noise1.play(); 
+        console.log('3');
+    }, 14000);
+
+    setTimeout(function() {
+        noise1.play(); 
+        console.log('3.5');
+    }, 19000);
+
+    setTimeout(function() {
+        noise5.play(); 
+        console.log('5');
+    }, 22500);
+
+
+</script>
+</body>
+</html>
